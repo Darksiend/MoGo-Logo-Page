@@ -863,7 +863,7 @@ h6 {
     text-align: center;
 }
 
-.map h2{
+.map h2 {
     font-size: 24px;
     color: #f38181;
     font-weight: 700;
@@ -876,9 +876,9 @@ h6 {
     text-decoration: none;
 }
 
-.map a{
-text-decoration: none;
-color: #f38181;
+.map a {
+    text-decoration: none;
+    color: #f38181;
 }
 
 .map a:hover {
@@ -894,12 +894,230 @@ color: #f38181;
     height: 3px;
     margin: 15px auto;
 
-    background-color:#f38181;
+    background-color: #f38181;
 }
 
-.section--map{
-    background: #e6e6e6 url(img/map/open_map.png) center no-repeat / cover;
+.section--map {
+    background: url(img/map/open_map.png) center no-repeat / cover;
     padding: 40px 0;
+
+}
+
+.footer {
+    padding-top: 65px;
+    background-color: #f8f8f8;
+}
+
+
+.footer__logo {
+    color: #cccccc;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+.footer__social {
+    margin-bottom: 25px;
+}
+
+.footer__text {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 30px;
+    padding-right: 5px; 
+
+}
+
+.footer__col--first {
+    width: 40%;
+
+}
+
+.footer__col--second {
+    width: 29%;
+}
+
+.footer__col--third {
+    width: 22%;
+}
+
+.footer__inner {
+    padding-bottom: 65px;
+    display: flex;
+}
+
+.footer__social-header {
+    font-family: "Montserrat - Regular";
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+
+}
+
+.footer__social-heade b {
+    font-size: 18px;
+}
+
+.footer__social-content {
+    color: #999999;
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 15px;
+}
+
+.footer__social-content i {
+    color: #95e1d3;
+    margin-left: 20px;
+}
+
+
+.subscribe {
+    width: 100%;
+    min-width: 380px;
+    display: flex;
+}
+
+.subscribe__input {
+    color: #cccccc;
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    max-width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    width: 60%;
+    border-right: 0;
+
+}
+
+.subscribe__btn {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #95e1d3;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    border: 0;
+    cursor: pointer;
+    width: 40%;
+    transition: background .2s linear;
+
+}
+
+.subscribe__btn:hover {
+    color: #74c7b8;
+}
+
+.subscribe__btn:focus {
+    outline: 0;
+
+}
+
+.subscribe__input:focus {
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+
+.footer__title {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+
+
+.footer__blogs__title__link {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.footer__blogs__date {
+    color: #999999;
+    font-family: "Roboto - Light Italic";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer__blogs__img{
+    width: 120px;
+    height: 80px;
+}
+
+.footer__blogs__item{
+display: flex;
+margin-bottom: 30px;
+align-items: center;
+}
+
+.blogs__content{
+    padding-left: 20px;
+}
+
+.footer__blogs__title__link:hover{
+    text-decoration: underline;
+}
+
+.inst__item{
+    flex: 1 1 0;
+    
+    width: 32.3333333%;
+
+    border-bottom: 1px solid #fff;
+}
+
+
+.inst__item img{
+    display: block;
+   
+     
    
 }
+
+.instagram{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.copyright{
+
+    border-top: 1px solid #e5e5e5;
+    padding:20px 0;
+    color: #333333;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+}
+
 
