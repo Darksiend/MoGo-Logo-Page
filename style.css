@@ -16,6 +16,10 @@ hr {
     margin: 40px 0;
 }
 
+.page{
+    overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -232,6 +236,7 @@ h6 {
 
 .section {
     padding: 80px 0;
+    
 }
 
 .section--gray {
@@ -610,6 +615,9 @@ h6 {
     top: 0;
     left: 0;
     z-index: 1;
+    width: 210px;
+    height: 210px;
+    display: block;
 }
 
 .reviews__btn {
@@ -815,12 +823,13 @@ h6 {
 
 .blogs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .blogs__header {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .blogs__title {
@@ -857,6 +866,12 @@ h6 {
 
 .blogs__item {
     width: 31%;
+}
+
+.blogs__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .blogs__date {
@@ -985,6 +1000,11 @@ h6 {
 
 }
 
+.footer__col {
+    padding: 0 15px;
+    ;
+}
+
 .footer__col--first {
     width: 40%;
 
@@ -1001,6 +1021,8 @@ h6 {
 .footer__inner {
     padding-bottom: 65px;
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .footer__social-header {
@@ -1032,8 +1054,9 @@ h6 {
 
 .subscribe {
     width: 100%;
-    min-width: 380px;
+    max-width: 380px;
     display: flex;
+
 }
 
 .subscribe__input {
@@ -1042,8 +1065,8 @@ h6 {
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
-    width: 100%;
-    max-width: 230px;
+
+
     height: 40px;
     border: 1px solid #e7e7e7;
     padding: 12px;
@@ -1060,8 +1083,8 @@ h6 {
     font-weight: 700;
     text-transform: uppercase;
     background: #95e1d3;
-    width: 100%;
-    max-width: 150px;
+
+
     height: 40px;
     font-family: "Montserrat", sans-serif;
     border: 0;
@@ -1139,10 +1162,16 @@ h6 {
     text-decoration: underline;
 }
 
-.inst__item {
-    flex: 1 1 0;
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    width: 32.3333333%;
+.inst__item {
+
+
+    width: 33%;
 
     border-bottom: 1px solid #fff;
 }
@@ -1150,16 +1179,13 @@ h6 {
 
 .inst__item img {
     display: block;
-
+    max-width: 100%;
+    height: auto;
 
 
 }
 
-.instagram {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 
 .copyright {
 
@@ -1186,6 +1212,10 @@ h6 {
 
     .intro__suptitle {
         font-size: 52px;
+    }
+
+    .reviews__text {
+        font-size: 20px;
     }
 }
 
@@ -1223,6 +1253,56 @@ h6 {
 
     .services__item--border {
         border-bottom: 0;
+    }
+
+    .reviews__photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .reviews__item {
+        padding-left: 175px;
+    }
+
+    .reviews {
+        padding: 0 60px;
+    }
+
+    .clients {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .clients__item {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .clients__item:last-child {
+        margin-bottom: 0;
+    }
+
+
+    .footer__col--first {
+        width: 100%;
+    }
+
+    .footer__col--second {
+        width: 50%;
+
+    }
+
+    .footer__col--third {
+        width: 50%;
+    }
+
+    .instagram {
+        justify-content: flex-start;
+    }
+
+    .inst__item {
+        width: auto;
+        border-right: 1px solid white;
     }
 }
 
@@ -1288,7 +1368,52 @@ h6 {
         width: 100%;
     }
 
+    .reviews__photo {
+        position: static;
+        margin: 0 auto 20px;
+    }
 
+    .reviews__item {
+        padding-left: 0;
+    }
+
+    .reviews__text {
+        font-size: 16px;
+    }
+
+    .reviews__author {
+        font-size: 20px;
+    }
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+
+    }
+
+    .blogs {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .blogs__item {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .blogs__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__col--second,
+    .footer__col--third {
+        width: 100%;
+    }
 
 }
 
@@ -1344,4 +1469,58 @@ h6 {
         bottom: -50px;
         right: -80px;
     }
+
+    .reviews {
+        padding: 0;
+    }
+
+    .reviews__btn {
+        top: 18%;
+    }
+
+    .works__col {
+        flex: none;
+        width: 100%;
+
+    }
+
+    .clients__photo {
+        position: static;
+    }
+
+    .clients__item {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .clients__text:before {
+        margin: 15px auto;
+    }
+
+    .subscribe {
+        flex-wrap: wrap;
+        max-width: none;
+
+    }
+
+    .subscribe__input {
+        border-right: 1px #e7e7e7;
+        margin-bottom: 10px;
+    }
+
+    .subscribe__input,
+    .subscribe__btn {
+        width: 100%;
+    }
+.footer__blogs__img{
+    height: 50px;
+    width: 80px;
+}
+
+.footer__blogs__title__link{
+    font-size: 10px;
+}
+
+
 }
