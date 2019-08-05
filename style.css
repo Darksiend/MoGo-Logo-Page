@@ -197,7 +197,7 @@ h6 {
     display: none;
 }
 
-.nav-toggle:focus{
+.nav-toggle:focus {
     outline: 0;
 }
 
@@ -679,8 +679,17 @@ h6 {
 
 /*revies*/
 .reviews {
-    padding: 0 110px;
+
     position: relative;
+
+
+
+
+
+}
+
+.reviews .slick-slider {
+    padding: 0 110px;
 }
 
 .reviews__text {
@@ -692,8 +701,11 @@ h6 {
 }
 
 .reviews__item {
+
     padding-left: 255px;
     position: relative;
+    min-height: 210px;
+
 }
 
 .reviews__author {
@@ -721,18 +733,28 @@ h6 {
     width: 210px;
     height: 210px;
     display: block;
+    border: 2px solid #95e1d3;
+    border-radius: 50%;
 }
 
-.reviews__btn {
+.slick-arrow {
+    display: block;
     position: absolute;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
     font-size: 0;
     color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+
+
 }
 
-.reviews__btn:after {
+.slick-arrow:after {
     content: "";
     display: block;
     width: 16px;
@@ -743,13 +765,17 @@ h6 {
     z-index: 1;
 }
 
-.reviews__btn--prev {
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-prev {
     left: 0;
     transform: rotate(-45deg);
     margin-left: 10px;
 }
 
-.reviews__btn--next {
+.slick-next {
     right: 0;
     transform: rotate(135deg);
     margin-right: 10px;
@@ -1367,7 +1393,7 @@ h6 {
         padding-left: 175px;
     }
 
-    .reviews {
+    .reviews .slick-slider {
         padding: 0 60px;
     }
 
@@ -1606,7 +1632,7 @@ h6 {
         padding: 0;
     }
 
-    .reviews__btn {
+    .slick-arrow {
         top: 18%;
     }
 
