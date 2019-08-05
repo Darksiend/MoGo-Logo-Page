@@ -55,6 +55,6 @@ $(function () {
 
 
         $this.toggleClass("active");
-        $(blockId).slideToggle();
+        
     });
 });
