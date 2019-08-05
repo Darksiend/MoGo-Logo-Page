@@ -11,23 +11,24 @@
       href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
       rel="stylesheet"
     />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mogo</title>
     <script src="https://kit.fontawesome.com/63df5c547c.js"></script>
   </head>
 
   <body>
-    <header class="header active">
+    <header id="header" class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">MoGo</div>
 
-          <nav class="nav">
-            <a class="nav__link" href="#">About</a>
-            <a class="nav__link" href="#">Service</a>
-            <a class="nav__link" href="#">Blog</a>
-            <a class="nav__link" href="#">Work</a>
-            <a class="nav__link" href="#">Contact</a>
+          <nav class="nav" id="nav">
+            <a class="nav__link" data-scroll="#about" href="#">About</a>
+            <a class="nav__link" data-scroll="#service" href="#">Service</a>
+            <a class="nav__link" data-scroll="#blog" href="#">Blog</a>
+            <a class="nav__link" data-scroll="#work" href="#">Work</a>
+            <a class="nav__link" data-scroll="#contacts" href="#">Contact</a>
             <a class="nav__link" href="#">
               <i class="fas fa-shopping-cart"></i>
           </a>
@@ -45,7 +46,7 @@
 
 
     <div class="page">
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="container">
         <div class="intro__inner">
           <h2 class="intro__suptitle">Creative Template</h2>
@@ -79,7 +80,7 @@
       </div>
     </div>
 
-    <section class="section">
+    <section class="section" id="about">
       <div class="container">
         <div class="section__header">
           <h3 class="section__subtitle">What we do</h3>
@@ -150,7 +151,7 @@
       </div>
     </div>
 
-    <section class="section">
+    <section class="section" ">
       <div class="container">
         <div class="section__header">
           <h3 class="section__subtitle">We work with</h3>
@@ -242,8 +243,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section id="service">
+      <div class="container" >
         <div class="section__header">
           <h3 class="section__subtitle">Service</h3>
           <h2 class="section__title">what we do</h2>
@@ -333,7 +334,7 @@
     </div>
   </body>
 
-  <section class="section">
+  <section class="section" id="contacts">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Who we are</h3>
@@ -444,11 +445,11 @@
     </div>
   </div>
 
-  <section class="section">
+  <section class="section" id="work">
     <div class="container">
       <div class="section__header">
-        <h3 class="section__subtitle">Our stories</h3>
-        <h2 class="section__title">Latest blog</h2>
+        <h3 class="section__subtitle">What we do</h3>
+        <h2 class="section__title">some of our work</h2>
         <div class="section__text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -605,7 +606,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="blog">
     <div class="container">
       <div class="section__header">
         <h3 class="section__subtitle">Our stories</h3>
@@ -855,5 +856,10 @@
       </div>
     </div>
   </div>
+
+
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </html>
